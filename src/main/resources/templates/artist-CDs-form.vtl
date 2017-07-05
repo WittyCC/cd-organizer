@@ -1,0 +1,19 @@
+<!--artist-CDs-form.vtl-->
+<h1>Add a CD to $artist.getArtistName()</h1>
+
+<form action="/CDs" method="post">
+  <input id="artistId" name="artistId" type="hidden" value="$artist.getId()">
+
+  <div class="form-group">
+  <label for="name">Album Name</label>
+  <input id="name" name="name" type="text">
+  </div>
+
+  <div class="form-group">
+  <label for="musicType">Music Type</label>
+  <input id="musicType" name="musicType" type="text">
+  </div>
+
+  <button type="submit" class="btn btn-default">Add CD</button>
+</form>
+<!--artist-CDs-form.vtl-->

@@ -1,0 +1,9 @@
+<!--cds.vtl-->
+<h1>All CDs</h1>
+<ul>
+  #foreach ($CD in $CDs)
+    <li><a href="/CDs/$CD.getId()">$CD.getAlbumName()</a></li>
+  #end
+</ul>
+<a href="/artists/new">Add New Artist</a>
+<!--cds.vtl-->
